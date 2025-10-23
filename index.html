@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飛機修護情境式英文學習單 (情境 2)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+        }
+        .header-section {
+            border-left: 6px solid #f97316; /* Orange accent */
+            padding-left: 1rem;
+        }
+        .term-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+        .term-en {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .term-zh {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        .dialogue-box {
+            background-color: #e0f2f7; /* Light cyan */
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #bae6fd;
+        }
+        .role {
+            font-weight: 700;
+            color: #0c4a6e; /* Dark blue */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+
+    <!-- Header -->
+    <header class="w-full max-w-5xl text-center mb-10">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 tracking-tight">飛機修護情境式英文學習單 (情境 2)</h1>
+        <p class="mt-2 text-lg text-gray-600">整合工具、零件、句型，模擬真實維修工作流程。</p>
+    </header>
+
+    <main class="w-full max-w-5xl">
+
+        <!-- Section 1: 課前準備 - 零件工具與維修學習單 -->
+        <div class="section-card">
+            <h2 class="text-2xl font-bold text-gray-800 header-section mb-6">1. 課前準備：專業詞彙彙整</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Common Tools -->
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 border-b pb-2">常見維修工具 (Common Maintenance Tools)</h3>
+                    <div id="tool-list">
+                        <!-- Content inserted by JS -->
+                    </div>
+                </div>
+
+                <!-- Aircraft Parts -->
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 border-b pb-2">常見飛機部位及零件 (Common Aircraft Parts)</h3>
+                    <div id="part-list">
+                        <!-- Content inserted by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: 基本維修句型 (互動式) -->
+        <div class="section-card">
+            <h2 class="text-2xl font-bold text-gray-800 header-section mb-6">2. 基本維修句型 (Interactive Sentence Builder)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Column 1: Checking/Confirmation -->
+                <div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-3">檢查、確認 (Checking & Confirmation)</h3>
+                    <div class="space-y-2">
+                        <p class="bg-green-100 p-2 rounded-md text-sm">We need to check the <input type="text" class="w-24 border border-green-300 rounded-sm px-1 text-gray-800">.</p>
+                        <p class="bg-green-100 p-2 rounded-md text-sm">Is there any problem with the <input type="text" class="w-24 border border-green-300 rounded-sm px-1 text-gray-800">?</p>
+                        <p class="bg-green-100 p-2 rounded-md text-sm">Please make sure the <input type="text" class="w-24 border border-green-300 rounded-sm px-1 text-gray-800"> is working.</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-red-700 mb-3 mt-6">描述故障 (Describing a Discrepancy)</h3>
+                    <div class="space-y-2">
+                        <p class="bg-red-100 p-2 rounded-md text-sm">I found a crack on the <input type="text" class="w-24 border border-red-300 rounded-sm px-1 text-gray-800">.</p>
+                        <p class="bg-red-100 p-2 rounded-md text-sm">There is an oil leak in the <input type="text" class="w-24 border border-red-300 rounded-sm px-1 text-gray-800">.</p>
+                        <p class="bg-red-100 p-2 rounded-md text-sm">The <input type="text" class="w-24 border border-red-300 rounded-sm px-1 text-gray-800"> is loose / damaged / broken.</p>
+                        <p class="bg-red-100 p-2 rounded-md text-sm">The <input type="text" class="w-24 border border-red-300 rounded-sm px-1 text-gray-800"> doesn’t work properly.</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Tool Request/Task Assignment -->
+                <div>
+                    <h3 class="text-lg font-semibold text-purple-700 mb-3">工具需求 (Tool Request)</h3>
+                    <div class="space-y-2">
+                        <p class="bg-purple-100 p-2 rounded-md text-sm">Please bring me a <input type="text" class="w-24 border border-purple-300 rounded-sm px-1 text-gray-800">.</p>
+                        <p class="bg-purple-100 p-2 rounded-md text-sm">I need a <input type="text" class="w-24 border border-purple-300 rounded-sm px-1 text-gray-800"> to fix it.</p>
+                        <p class="bg-purple-100 p-2 rounded-md text-sm">Do we have a <input type="text" class="w-24 border border-purple-300 rounded-sm px-1 text-gray-800"> here?</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-indigo-700 mb-3 mt-6">工作分配 (Task Assignment)</h3>
+                    <div class="space-y-2">
+                        <p class="bg-indigo-100 p-2 rounded-md text-sm">Please check the <input type="text" class="w-24 border border-indigo-300 rounded-sm px-1 text-gray-800">.</p>
+                        <p class="bg-indigo-100 p-2 rounded-md text-sm">Use the <input type="text" class="w-24 border border-indigo-300 rounded-sm px-1 text-gray-800"> to fix the problem.</p>
+                        <p class="bg-indigo-100 p-2 rounded-md text-sm">Can you handle the <input type="text" class="w-24 border border-indigo-300 rounded-sm px-1 text-gray-800"> today?</p>
+                        <p class="bg-indigo-100 p-2 rounded-md text-sm">Let’s finish the inspection before noon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: 對話練習 - 角色扮演 -->
+        <div class="section-card">
+            <h2 class="text-2xl font-bold text-gray-800 header-section mb-6">3. 對話練習：情境模擬 (Dialogue Practice)</h2>
+            <p class="mb-4 text-gray-600">請兩人一組，完成下列情境的對話。別忘了在對話最後加上 **回應與承諾的語句**。</p>
+
+            <div class="space-y-8">
+                <!-- Dialogue Scenario 1: 起落架異常 -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3 p-2 bg-yellow-100 rounded-lg">情境 A: 起落架異常 (Landing Gear Discrepancy)</h3>
+                    <div class="dialogue-box space-y-3">
+                        <p><span class="role">Technician:</span> We need to check the <span class="font-bold text-red-600">landing gear</span>.</p>
+                        <p><span class="role">Supervisor:</span> Is there any problem?</p>
+                        <p><span class="role">Technician:</span> Yes, I found <input type="text" class="w-48 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., a loose bolt / an oil leak">.</p>
+                        <p><span class="role">Supervisor:</span> Please take the <span class="font-bold text-red-600">wrench</span> and fix it.</p>
+                        <p class="mt-4 border-t pt-2 border-blue-300"><span class="role">Technician (回應承諾):</span> <input type="text" class="w-full border border-yellow-400 rounded-sm px-1 text-gray-800" placeholder="e.g., Sure, I’ll handle it right away."></p>
+                    </div>
+                </div>
+
+                <!-- Dialogue Scenario 2: 安全帽異常 -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3 p-2 bg-yellow-100 rounded-lg">情境 B: 安全帽異常 (Safety Helmet Discrepancy)</h3>
+                    <div class="dialogue-box space-y-3">
+                        <p><span class="role">Technician:</span> We need to check the <span class="font-bold text-red-600">safety helmet</span>.</p>
+                        <p><span class="role">Supervisor:</span> Is there any problem?</p>
+                        <p><span class="role">Technician:</span> Yes, I found <input type="text" class="w-48 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., a crack / a damaged strap">.</p>
+                        <p><span class="role">Supervisor:</span> Please take a new <span class="font-bold text-red-600">helmet</span> and replace it.</p>
+                        <p class="mt-4 border-t pt-2 border-blue-300"><span class="role">Technician (回應承諾):</span> <input type="text" class="w-full border border-yellow-400 rounded-sm px-1 text-gray-800" placeholder="e.g., Got it. I’ll bring a new one from the storage."></p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-gray-700 mb-3 mt-8 p-2 bg-gray-100 rounded-lg">回應與承諾的語句 (Commitment Phrases)</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-800">
+                <p class="bg-gray-200 p-2 rounded-md">Sure, I’ll handle it right away.</p>
+                <p class="bg-gray-200 p-2 rounded-md">Sure, I’ll start immediately.</p>
+                <p class="bg-gray-200 p-2 rounded-md">Got it. I’ll bring a new one from the storage.</p>
+                <p class="bg-gray-200 p-2 rounded-md">Sure, I’ll take care of it.</p>
+                <p class="bg-gray-200 p-2 rounded-md">Okay, I’ll finish the inspection before noon.</p>
+            </div>
+        </div>
+
+        <!-- Section 4: AMM 學習單 (Aircraft Maintenance Manual) -->
+        <div class="section-card">
+            <h2 class="text-2xl font-bold text-gray-800 header-section mb-6">4. AMM 學習單 (Aircraft Maintenance Manual)</h2>
+
+            <div class="mb-6 border-b pb-4">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">AMM 特點與用途</h3>
+                <p class="text-gray-600">AMM 是飛機製造商編寫的原廠標準文件，用於規範所有檢修、測試和零件更換步驟。</p>
+                <ul class="list-disc list-inside mt-2 text-sm text-gray-600 space-y-1">
+                    <li>依章節分類 (ATA 章節編碼): 例如 **ATA 32: 起落架** (Landing Gear)，**ATA 27: 飛控系統** (Flight Controls)。</li>
+                    <li>用途: 維修人員必須依照 AMM 步驟操作，確保安全與標準化。</li>
+                </ul>
+            </div>
+            
+            <!-- AMM 查閱句型 -->
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">AMM 查閱句型與情境</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-blue-50">
+                        <tr>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">項目 (Item)</th>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">說明 (Description)</th>
+                            <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">對話句型範例 (Example Phrases)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">維修程序<br>(Maintenance Procedures)</td>
+                            <td class="px-3 py-2">拆卸、檢查、安裝、維修步驟</td>
+                            <td class="px-3 py-2 italic text-blue-600">"According to the AMM, we need to remove the access panel first."<br>"Follow the steps in the AMM."</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">工具與設備<br>(Tools & Equipment)</td>
+                            <td class="px-3 py-2">任務所需工具、扭力要求</td>
+                            <td class="px-3 py-2 italic text-blue-600">"Use a <span class="font-bold">torque wrench</span> as specified in the AMM."<br>"The manual requires a <span class="font-bold">screwdriver</span> for this step."</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">安全與防護<br>(Safety Instructions)</td>
+                            <td class="px-3 py-2">電源、PPE、防護措施</td>
+                            <td class="px-3 py-2 italic text-blue-600">"Make sure the power is off before starting."<br>"Wear gloves and goggles as per AMM instructions."</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">圖與零件圖<br>(Schematics & Figures)</td>
+                            <td class="px-3 py-2">零件位置、組裝圖</td>
+                            <td class="px-3 py-2 italic text-blue-600">"Refer to figure 3-12 on page 45."<br>"The diagram shows the <span class="font-bold">hydraulic pump</span> location."</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">備註 / 注意事項<br>(Notes / Cautions)</td>
+                            <td class="px-3 py-2">特殊警告、故障處理提示</td>
+                            <td class="px-3 py-2 italic text-blue-600">"Do not overtighten the <span class="font-bold">bolts</span> as warned in the AMM."<br>"Check for oil leaks before reassembly."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Part 1: Parts & Fault Description (Fill-in-the-blanks) -->
+            <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4">實戰練習 Part 1: 零件檢查與故障描述</h3>
+            <div class="dialogue-box space-y-3">
+                <p><span class="role">Technician:</span> We need to check the <input type="text" class="w-32 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., fuel tank">.</p>
+                <p><span class="role">Supervisor:</span> Is there any problem?</p>
+                <p><span class="role">Technician:</span> Yes, I found a <input type="text" class="w-24 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., small dent"> on the <input type="text" class="w-32 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., wing access panel">.</p>
+                <p><span class="role">Supervisor:</span> Please take the <input type="text" class="w-32 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., flashlight"> and fix it.</p>
+            </div>
+            
+            <!-- Part 2: Manual Reading (Fill-in-the-blanks) -->
+            <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4">實戰練習 Part 2: 手冊查閱與步驟說明</h3>
+            <div class="dialogue-box space-y-3">
+                <p><span class="role">Technician:</span> According to the AMM, we need to <input type="text" class="w-48 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., bleed the hydraulic system"> first.</p>
+                <p><span class="role">Technician:</span> Use a <input type="text" class="w-32 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., calibrated torque wrench"> as specified.</p>
+                <p><span class="role">Technician:</span> Refer to figure <input type="text" class="w-16 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., 3-12"> on page <input type="text" class="w-16 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., 45">.</p>
+                <p><span class="role">Technician:</span> Make sure <input type="text" class="w-48 border border-blue-400 rounded-sm px-1 text-gray-800" placeholder="e.g., the circuit breaker is pulled"> before proceeding.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Font Awesome for Icons (Navigation arrows) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" xintegrity="sha512-..." crossorigin="anonymous"></script>
+
+    <script>
+        // Data from the user's learning sheet
+        const toolData = [
+            { en: "wrench", zh: "扳手" },
+            { en: "pliers", zh: "鉗子" },
+            { en: "screwdriver", zh: "螺絲起子" },
+            { en: "torque wrench", zh: "扭力扳手" },
+            { en: "hammer", zh: "鐵鎚" },
+            { en: "flashlight", zh: "手電筒" },
+            { en: "drill", zh: "電鑽" },
+            { en: "safety helmet", zh: "安全帽" },
+            { en: "bolt", zh: "螺栓" },
+        ];
+
+        const partData = [
+            { en: "engine", zh: "引擎" },
+            { en: "tire", zh: "輪胎" },
+            { en: "hydraulic system", zh: "液壓系統" },
+            { en: "brake system", zh: "煞車系統" },
+            { en: "landing gear", zh: "起落架" },
+            { en: "fuel tank", zh: "油箱" },
+            { en: "wing", zh: "翼" },
+            { en: "filter", zh: "濾網 / 濾芯" },
+        ];
+
+        function createTermList(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(item => `
+                <div class="term-item">
+                    <span class="term-en">${item.en}</span>
+                    <span class="term-zh">${item.zh}</span>
+                </div>
+            `).join('');
+        }
+
+        window.onload = function() {
+            // Populate the tool and part lists
+            createTermList(toolData, 'tool-list');
+            createTermList(partData, 'part-list');
+            
+            // Note: Removed flashcard logic as the user found it too monotonous.
+            // The focus is now on the structured learning sheet format.
+        };
+    </script>
+</body>
+</html>
